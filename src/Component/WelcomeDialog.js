@@ -1,23 +1,13 @@
 import React from 'react'
-import FancyBorder from './FancyBorder'
-import SplitPane from './SplitPane'
-import Contact from './Contact'
-import ChatStatus from './ChatStatus'
+import Dialog from './Dialog'
 
 function WelcomeDialog(props) {
     return (
-        <div>
-            <FancyBorder color="red">
-                <div> I am bordered</div>
-            </FancyBorder>
-
-            <SplitPane left={<Contact list={['Ninan', 'Leo', 'Orion']}/>}
-                       right={<ChatStatus online={['Leo']} offline={['Ninan', 'Orion']}/>}
-            />
-        </div>
+        <Dialog
+            title="This is a welcome"
+            message="Welcome to React"
+        />
     );
 }
 
-export default WelcomeDialog;
-
-
+export default WelcomeDialog

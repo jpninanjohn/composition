@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import WelcomeDialog from './Component/WelcomeDialog'
+import SignUpDialog from './Component/SignupDialog'
 
 class App extends Component {
   render() {
@@ -9,10 +9,10 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>Signup to React</h2>
         </div>
         <p className="App-intro">
-          <WelcomeDialog />
+          <SignUpDialog />
         </p>
       </div>
     );
